@@ -1,6 +1,4 @@
 <?php
-
-
 namespace Shop;
 
 
@@ -88,7 +86,6 @@ class app {
                         app::LoadAllPHPFiles($directory."/".$file);
                 } else {
                     if(strpos($file, '.php') !== false) {
-
                         include_once($directory."/".$file);
                     }
                 }

@@ -3,6 +3,8 @@
 namespace Shop;
 
 
+use Shop\Classes\Errors;
+
 /**
  *  Main App Starter
  *
@@ -23,7 +25,7 @@ class Router {
         if($json === null)
             new Errors("Not Enough Data");
         try {
-            $class = "SPTA\Controllers\\".$route ;
+            $class = "Shop\Controllers\\".$route ;
             $instance = null;
             if(class_exists($class))   {
                 $instance = new $class(false);

@@ -16,7 +16,9 @@ class Config
     public static $USERNAME = "SPTA";
     public static $PASSWORD = "SPTA";
     public static $SERVER   = "localhost";
+
     public static $JWTPASSWORD = "1234567";
+
     public static $REDISPASSWORD = "spta";
     public static $REDISENABLED = true;
     public static $REDISSCHEMA = "tcp";
