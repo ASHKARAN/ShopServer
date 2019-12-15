@@ -12,9 +12,9 @@ class Config
     public static $DEBUG_MODE = true ;
 
 
-    public static $DBNAME   = "SPTA";
-    public static $USERNAME = "SPTA";
-    public static $PASSWORD = "SPTA";
+    public static $DBNAME   = "shop";
+    public static $USERNAME = "shop";
+    public static $PASSWORD = "shop";
     public static $SERVER   = "localhost";
 
     public static $JWTPASSWORD = "1234567";

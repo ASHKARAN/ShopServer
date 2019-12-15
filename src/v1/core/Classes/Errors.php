@@ -31,6 +31,7 @@ class Errors
         if($registerError) $this->registerError();
         if($notifyError)   $this->notifyError();
 
+        $this->Exception = null;
         return app::returnORPrint(get_object_vars($this) , $system);
     }
 

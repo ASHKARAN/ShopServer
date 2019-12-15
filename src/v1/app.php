@@ -2,6 +2,8 @@
 namespace Shop;
 
 
+use Shop\Classes\Errors;
+
 class app {
 
 
@@ -18,31 +20,10 @@ class app {
     }
 
 
-    /**
-     * this function send json result to the client and thn finish the app
-     * @param type $message
-     */
-    public static function print2Json($message) {
-        $array = ["error" => $message];
-        echo json_encode($array);
-        exit;
-    }
 
 
-    /**  TODO inja bayad connection database ro ham close konim
-    // TODO inja bayad connection redis ro ham close konim
-     * this function send json result to the client and thn finish the app
-     * @param type $message
-     */
-    public static function print2JsonWithKey($key = "message" , $value = "") {
-        $array = [$key => $value];
-        echo json_encode($array);
-        exit;
-    }
 
 
-    // TODO inja bayad connection database ro ham close konim
-    // TODO inja bayad connection redis ro ham close konim
     public static function returnORPrint($data , $system = false) {
         if($system) return $data;
         echo  json_encode($data);
@@ -59,9 +40,6 @@ class app {
 
     }
 
-    public static function ret($t) {
-        return 3;
-    }
     public static function validateJSON($json , $values) {
         foreach ($values as $value) {
             if(!array_key_exists($value , $json)) {
